@@ -17,7 +17,7 @@ GROQ_URL = "https://api.groq.com/openai/v1/chat/completions"
 MODEL_NAME = "llama3-8b-8192"
 
 if not GROQ_API_KEY:
-    raise RuntimeError("GROQ_API_KEY belum terbaca. Cek file .env")
+    print("WARNING: GROQ_API_KEY belum terbaca")
 
 app = FastAPI()
 app.mount("/static", StaticFiles(directory="static"), name="static")
