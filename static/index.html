@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AI Pendamping</title>
+
+  <!-- WAJIB absolute path -->
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar" id="sidebar">
+  <button id="sidebarToggle" aria-label="Toggle sidebar">☰</button>
+
+  <img src="logo1.png" alt="logo">
+  <button id="newChatBtn">+ New Chat</button>
+  <div id="history"></div>
+</aside>
+
+
+    <main class="app">
+      <div id="hero">
+        <h1>HelloMind</h1>
+        <p>Tempat aman untuk berpikir dan berbagi.</p>
+
+        <div class="examples">
+          <span onclick="sendQuick('aku lagi capek banget akhir-akhir ini')">Aku lagi capek banget</span>
+          <span onclick="sendQuick('kenapa aku susah tidur ya?')">Kenapa aku susah tidur?</span>
+          <span onclick="sendQuick('aku butuh saran')">Aku butuh saran</span>
+        </div>
+      </div>
+
+      <div id="chat" aria-live="polite"></div>
+
+      <div class="input-wrapper">
+        <input id="input" placeholder="Tulis pesanmu di sini..." autocomplete="off" />
+        <button id="sendBtn">➤</button>
+      </div>
+    </main>
+  </div>
+
+  <footer class="footer">
+  <p>© 2025 Politeknik Mitra Industri — Mencetak SDM Unggul Berdaya Saing Industri.
+  All rights reserved.</p>
+</footer>
+
+  <!-- WAJIB absolute path -->
+  <script src="/static/app.js"></script>
+</body>
+</html>
